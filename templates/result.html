@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results – WattWise</title>
+</head>
+<body>
+    <h2>Analysis for {{ result.month }}</h2>
+    <p><b>Units Used:</b> {{ result.units }}</p>
+    <p><b>Cost:</b> ₹{{ result.cost }}</p>
+    <img src="/{{ chart }}" width="400">
+    <h3>Suggestions:</h3>
+    <ul>
+        {% for tip in result.tips %}
+        <li>{{ tip }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Analyze another bill</a>
+</body>
+</html>

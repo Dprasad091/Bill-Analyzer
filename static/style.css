@@ -1,0 +1,8 @@
+body {
+    font-family: sans-serif;
+    margin: 50px;
+}
+form {
+    padding: 20px;
+    border: 1px solid #ccc;
+}

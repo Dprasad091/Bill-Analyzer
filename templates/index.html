@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WattWise</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>WattWise – Upload Your Bill</h1>
+    <form action="/analyze" method="POST" enctype="multipart/form-data">
+        <input type="file" name="bill" required>
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html>
